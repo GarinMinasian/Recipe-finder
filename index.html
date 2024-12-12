@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a recipe...">
+            <button>Search</button>
+        </div>
+
+        <div class="recipe-container"></div>
+
+        <button class="add-recipe" onclick="document.getElementById('add-recipe-form').style.display='block'">Add Recipe</button>
+        
+        <div id="add-recipe-form" style="display:none; margin-top: 20px;">
+            <h3>Add a New Recipe</h3>
+            <input type="text" id="recipe-name" placeholder="Recipe Name"><br>
+            <input type="text" id="recipe-link" placeholder="Recipe Link"><br>
+            <input type="text" id="recipe-image" placeholder="Image URL"><br>
+            <button onclick="addRecipe()">Add Recipe</button>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
